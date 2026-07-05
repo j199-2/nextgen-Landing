@@ -46,7 +46,6 @@ body{background:oklch(var(--background-950));color:oklch(var(--foreground-950));
 .pilar-tab.active{background:oklch(var(--primary-500))!important;color:oklch(var(--foreground-950))!important;border-color:oklch(var(--primary-500))!important}
 .pilar-tab.active .pilar-label{color:oklch(var(--foreground-950)/.7)!important}
 .pilar-tab.active .pilar-icon-bg{background:oklch(var(--foreground-950))!important}
-/* Botón de idioma rediseñado sin cuadro negro */
 #translateBtn{position:fixed;bottom:1.5rem;left:1.5rem;z-index:90;height:42px;padding:0 16px;border-radius:22px;background:transparent;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid oklch(var(--foreground-700)/.3);color:oklch(var(--foreground-700));font-size:.78rem;font-weight:700;letter-spacing:.04em;cursor:pointer;display:flex;align-items:center;gap:6px;transition:all .3s;font-family:var(--font-body);user-select:none}
 #translateBtn:hover{border-color:oklch(var(--primary-500)/.7);color:oklch(var(--primary-500));box-shadow:0 4px 24px oklch(var(--primary-500)/.2)}
 #translateBtn .lang-opt{opacity:.4;transition:opacity .3s,color .3s}
@@ -70,7 +69,6 @@ body{background:oklch(var(--background-950));color:oklch(var(--foreground-950));
 <header id="mainHeader" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent">
   <nav class="w-full px-4 md:px-8 h-16 md:h-20 flex items-center justify-between">
     <a href="#top" class="flex items-center gap-2 cursor-pointer">
-      <span class="w-9 h-9 flex items-center justify-center rounded-md bg-primary-500"><i class="ri-flashlight-fill text-fg-950 text-lg"></i></span>
       <span class="font-heading text-xl md:text-2xl tracking-wide text-fg-950">NEXTGEN<span class="text-primary-500">.</span>CREATORS</span>
     </a>
     <div class="hidden md:flex items-center gap-8">
@@ -101,8 +99,8 @@ body{background:oklch(var(--background-950));color:oklch(var(--foreground-950));
 
 <section id="top" class="relative w-full min-h-[760px] md:min-h-[860px] flex items-center pt-28 md:pt-32 pb-20 md:pb-24 overflow-hidden">
   <div class="absolute inset-0">
-    <!-- IMAGEN INTERCAMBIADA: antes era hero-bg.jpg -->
-    <img alt="Sistema Short Clip Móvil" class="w-full h-full object-cover object-top" src="images/phone-mockup.jpg">
+    <!-- APUNTANDO A TU IMAGEN LOCAL -->
+    <img alt="Sistema Short Clip Móvil" class="w-full h-full object-cover object-top" src="images/hero-bg.jpg">
     <div class="absolute inset-0 bg-gradient-to-b from-bg-950/70 via-bg-950/55 to-bg-950/90"></div>
     <div class="absolute inset-0" style="background:radial-gradient(ellipse at center,transparent 0%,oklch(var(--background-950)/.55) 75%)"></div>
   </div>
@@ -129,7 +127,6 @@ body{background:oklch(var(--background-950));color:oklch(var(--foreground-950));
         <div class="flex items-center justify-center gap-2 px-3 py-3 rounded-md bg-bg-950/55 border border-bg-300/30 backdrop-blur-sm"><span class="w-6 h-6 flex items-center justify-center text-primary-500"><i class="ri-money-dollar-circle-line text-lg"></i></span><span class="text-xs md:text-sm font-semibold text-fg-800">Pagos en USD</span></div>
         <div class="flex items-center justify-center gap-2 px-3 py-3 rounded-md bg-bg-950/55 border border-bg-300/30 backdrop-blur-sm"><span class="w-6 h-6 flex items-center justify-center text-primary-500"><i class="ri-infinity-line text-lg"></i></span><span class="text-xs md:text-sm font-semibold text-fg-800">Acceso Vitalicio</span></div>
       </div>
-      <!-- AVISO DE IDIOMAS -->
       <div class="mt-6 inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-500/10 border border-primary-500/30 animate-fade-up animate-fade-up-d4">
         <i class="ri-translate-2 text-primary-500 text-base"></i>
         <span class="text-xs md:text-sm font-semibold text-fg-800 nav-text" data-tr="hero-langs">Curso disponible en Español e English · Course available in Spanish & English</span>
@@ -225,8 +222,8 @@ body{background:oklch(var(--background-950));color:oklch(var(--foreground-950));
       </div>
       <div class="lg:col-span-5 relative reveal-init">
         <div class="relative rounded-xl overflow-hidden border-2 border-primary-500/40 bg-bg-50">
-          <!-- IMAGEN INTERCAMBIADA: antes era phone-mockup.jpg -->
-          <img alt="Sistema Short Clip Móvil" class="w-full h-auto object-cover object-top" src="images/hero-bg.jpg" style="min-height:400px">
+          <!-- APUNTANDO A TU IMAGEN LOCAL -->
+          <img alt="Sistema Short Clip Móvil" class="w-full h-auto object-cover object-top" src="images/phone-mockup.jpg" style="min-height:400px">
           <div class="absolute -bottom-4 -left-4 px-4 py-3 rounded-lg bg-fg-950 border border-primary-500">
             <p class="text-[11px] uppercase tracking-wider text-fg-50 mb-0.5 nav-text" data-tr="met-badge1">Ahorro mensual</p>
             <p class="font-heading text-3xl text-primary-500">$80+ USD</p>
@@ -315,7 +312,6 @@ body{background:oklch(var(--background-950));color:oklch(var(--foreground-950));
             <li class="flex items-start gap-3 p-3 rounded-md bg-bg-50/60"><span class="w-8 h-8 flex items-center justify-center rounded-md bg-primary-500/20 text-primary-500 shrink-0"><i class="ri-money-dollar-circle-line text-base"></i></span><span class="text-sm text-fg-900 leading-snug nav-text" data-tr="of-i6">Mapa de fuentes de monetización (Whop + alternativas)</span></li>
             <li class="flex items-start gap-3 p-3 rounded-md bg-bg-50/60"><span class="w-8 h-8 flex items-center justify-center rounded-md bg-primary-500/20 text-primary-500 shrink-0"><i class="ri-infinity-line text-base"></i></span><span class="text-sm text-fg-900 leading-snug nav-text" data-tr="of-i7">Acceso de por vida + actualizaciones futuras gratis</span></li>
             <li class="flex items-start gap-3 p-3 rounded-md bg-bg-50/60"><span class="w-8 h-8 flex items-center justify-center rounded-md bg-primary-500/20 text-primary-500 shrink-0"><i class="ri-customer-service-2-line text-base"></i></span><span class="text-sm text-fg-900 leading-snug nav-text" data-tr="of-i8">Soporte directo dentro de la comunidad</span></li>
-            <!-- NUEVO ÍTEM: Curso en 2 idiomas -->
             <li class="flex items-start gap-3 p-3 rounded-md bg-bg-50/60"><span class="w-8 h-8 flex items-center justify-center rounded-md bg-primary-500/20 text-primary-500 shrink-0"><i class="ri-translate-2 text-base"></i></span><span class="text-sm text-fg-900 leading-snug nav-text" data-tr="of-i9">Curso disponible en Español e Inglés</span></li>
           </ul>
         </div>
@@ -357,7 +353,6 @@ body{background:oklch(var(--background-950));color:oklch(var(--foreground-950));
       <p class="mt-6 text-base md:text-lg text-fg-700 nav-text" data-tr="cta-final-desc">La cohorte está abierta. El precio de lanzamiento no dura para siempre. Y los $80 USD/mes que vas a dejar de gastar en IA… esos sí son para siempre.</p>
       <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center items-center">
         <a href="https://whop.com/checkout/plan_CTcDxir2nBqUe" target="_blank" rel="noopener noreferrer nofollow" class="cta-blink whitespace-nowrap rounded-md bg-primary-500 hover:bg-primary-600 text-fg-950 font-extrabold text-base md:text-lg px-8 md:px-10 py-4 cursor-pointer transition-all flex items-center justify-center gap-2"><i class="ri-rocket-2-fill"></i><span class="nav-text" data-tr="cta-final-btn">QUIERO MI ACCESO — $149.99 USD</span></a>
-        <!-- ENLACE DEL BOT DE SOPORTE -->
         <a href="https://nextgen-bot.vercel.app/" target="_blank" rel="noopener noreferrer nofollow" class="cta-blink-fast whitespace-nowrap rounded-md border-2 border-primary-500 text-primary-500 hover:bg-primary-500 hover:text-fg-950 font-extrabold text-base md:text-lg px-8 md:px-10 py-4 cursor-pointer transition-all flex items-center justify-center gap-2"><i class="ri-chat-3-line"></i><span class="nav-text" data-tr="cta-final-chat">CHAT DE INFORMACIÓN Y VENTAS</span></a>
       </div>
       <p class="mt-6 text-xs text-fg-600 nav-text" data-tr="cta-final-note"><i class="ri-shield-check-line text-primary-500"></i> Pago seguro · Acceso inmediato · 2.400+ cliperos activos</p>
@@ -370,12 +365,10 @@ body{background:oklch(var(--background-950));color:oklch(var(--foreground-950));
 <footer class="px-4 md:px-8 py-10 border-t border-bg-300/30 bg-bg-950 relative z-10">
   <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
     <div class="flex items-center gap-2">
-      <span class="w-8 h-8 flex items-center justify-center rounded-md bg-primary-500"><i class="ri-flashlight-fill text-fg-950 text-sm"></i></span>
       <span class="font-heading text-lg tracking-wide text-fg-950">NEXTGEN<span class="text-primary-500">.</span>CREATORS</span>
     </div>
     <div class="flex items-center gap-5">
       <a href="https://www.facebook.com/share/1JBMgf8mrA/" target="_blank" rel="noopener noreferrer nofollow" class="w-10 h-10 flex items-center justify-center rounded-full bg-bg-200/60 text-fg-800 hover:bg-primary-500 hover:text-fg-950 transition-all" aria-label="Facebook"><i class="fa-brands fa-facebook-f text-lg"></i></a>
-      <!-- ENLACE DEL BOT DE SOPORTE EN FOOTER -->
       <a href="https://nextgen-bot.vercel.app/" target="_blank" rel="noopener noreferrer nofollow" class="w-10 h-10 flex items-center justify-center rounded-full bg-bg-200/60 text-fg-800 hover:bg-primary-500 hover:text-fg-950 transition-all" aria-label="Chat"><i class="ri-chat-3-line text-lg"></i></a>
     </div>
     <p class="text-xs text-fg-600">&copy; 2025 NextGen Creators.</p>
